@@ -1,10 +1,10 @@
 # Site settings
 title: Souhaieb Tarhouni - a developer
-email: willianjustenqui@gmail.com
+email: tarhounisouhaieb@gmail.com
 description: >
   a blog about the stuff i work and i play with
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://blog.tsouhaieb.space" # the base hostname & protocol for your site
+#baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://souhaiebtar.github.io" # the base hostname & protocol for your site
 twitter_username: tsouhaieb
 github_username:  souhaiebtar
 
