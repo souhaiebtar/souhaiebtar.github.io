@@ -1,0 +1,69 @@
+# Site settings
+title: Souhaieb Tarhouni - a developer
+email: willianjustenqui@gmail.com
+description: >
+  a blog about the stuff i work and i play with
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://blog.tsouhaieb.space" # the base hostname & protocol for your site
+twitter_username: tsouhaieb
+github_username:  souhaiebtar
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+paginate: 21
+paginate_path: "/page/:num/"
+
+# plugins
+plugins: [jekyll-paginate]
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+files_to_cache:
+ - '/assets/js/blog.js'
+
+pages_to_cache:
+  - '/cursos/'
+  - '/series/'
+  - '/about/'
+  - '/tags/'
+  - '/offline/index.html'
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  # - title: Cursos
+  #   url: /cursos/
+  # - title: Séries
+  #   url: /series/
+  - title: Tags
+    url: /tags/
+  - title: About me
+    url: /about/
+
+collections:
+  - cursos
+
+# exclude my node related stuff
+exclude: [
+  'package.json',
+  'src',
+  'node_modules',
+  'vendor/bundle/ruby',
+  'package-lock.json',
+  'Readme.md',
+  'gulpfile.js',
+  'initpost.sh',
+  'testlinks.sh',
+  '.travis.yml'
+]
+
+include: ['_redirects', '_headers']

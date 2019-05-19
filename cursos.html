@@ -1,0 +1,55 @@
+---
+layout: default
+title: 'Souhaieb Tarhouni - Courses'
+description: 'Learn the most diverse technologies in separate courses in small and complete modules'
+image: '/assets/img/cursos/cursos-bg.png'
+---
+
+<main class="home cursos-content" id="post" role="main">
+    <div id="grid" class="row flex-grid">
+    {% for curso in site.cursos reversed %}
+        <article class="box-item post-{{curso.main-class}}">
+                <span class="ribbon">
+                    <a href="{{site.url}}/category/{{curso.main-class}}/"><span>{{curso.main-class}}</span></a>
+                </span>
+                <div class="box-body cursos-box-body">
+                    <a aria-label="{{ curso.title }}" class="post-link" href="{{ curso.link }}" onclick="ga('send', 'event', 'cursos', 'click', '{{curso.title}}')">
+                        <div class="cursos-image" style="background-image: url({{curso.image}})"></div>
+                    </a>
+                    <div class="cursos-container">
+                        <a class="post-link" href="{{ curso.link }}" onclick="ga('send', 'event', 'cursos', 'click', '{{curso.title}}')">
+                            <h2 class="post-title">
+                                {{ curso.title }}
+                            </h2>
+                        </a>
+                        <a class="post-link" href="{{ curso.link }}" onclick="ga('send', 'event', 'cursos', 'click', '{{curso.title}}')">
+                            <p class="description">{{ curso.introduction }}</p>
+                        </a>
+                        <div class="tags">
+                            {% for tag in curso.tags %}
+                                <a href="/tags/#{{tag | slugify }}">{{ tag }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+        </article>
+    {% endfor %}
+    </div>
+</main>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "WebPage",
+        "url": "https://souhaiebtar.github.io/cursos/",
+        "name": "Souhaieb Tarhouni - Courses",
+        "author": {
+            "type": "Person",
+            "name": "Souhaieb Tarhouni from Jdeida",
+            "sameAs": [
+                "https://www.facebook.com/tsouhaieb",
+                "https://www.linkedin.com/in/souhaieb-tarhouni/",
+            ]
+        },
+        "description": "{{ site.description }}"
+    }
+</script>
