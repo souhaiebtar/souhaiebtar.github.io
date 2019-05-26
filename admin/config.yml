@@ -19,7 +19,7 @@ collections:
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Introduction", name: "introduction", widget: "string"}
       - {label: "Twitter text", name: "twitter_text", widget: "string"}
-      - {label: "Main Class", name: "main-class", widget: "select", options: ["jekyll", "css", "js", "html", "svg", "dev", "misc"]}
+      - {label: "Main Class", name: "main-class", widget: "select", options: ["jekyll", "css", "js", "html", "svg", "dev", "misc", "tools"]}
       - {label: "Color", name: "color", widget: "select", options: [
           { label: "Jekyll", value: "#B31917" },
           { label: "CSS", value: "#2DA0C3" },
@@ -27,7 +27,8 @@ collections:
           { label: "HTML", value: "#EB7728" },
           { label: "SVG", value: "#7D669E" },
           { label: "Dev", value: "#637a91" },
-          { label: "Misc", value: "#7AAB13" }
+          { label: "Misc", value: "#7AAB13" },
+          { label: "Tools", value: "#b31917"}
         ]
         }
       - {label: "Tags", name: "tags", widget: "list", default: [""]}

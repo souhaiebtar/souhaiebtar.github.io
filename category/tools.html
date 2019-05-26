@@ -1,15 +1,15 @@
 ---
 layout: default
-main-class: 'misc'
-title: 'Miscellaneous category'
-description: 'See here posts about everything, travel, new challenges, outbursts and everything else written by Souhaieb Tarhouni.'
+main-class: 'tools'
+title: 'tools Category'
+description: 'See here all posts in the tools area, such as cli tools, software i use '
 ---
 
 <main class="home" id="scroll" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
-    <h1 class="title-category">Miscellaneous</h1>
+    <h1 class="title-category">Tools</h1>
     <div id="grid" class="row flex-grid">
     {% for post in site.posts %}
-        {% if post.main-class == 'misc' %}
+        {% if post.main-class == 'tools' %}
             <article class="box-item post-{{post.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <span class="ribbon"><span>{{post.main-class}}</span></span>
                     <div class="box-body">
@@ -36,13 +36,12 @@ description: 'See here posts about everything, travel, new challenges, outbursts
     {% endfor %}
     </div>
 </main>
-
 <script type="application/ld+json">
     {
         "@context": "http://schema.org/",
         "@type": "WebPage",
-        "url": "https://souhaiebtar.github.io/misc/",
-        "name": "Souhaieb Tarhouni Blog - Miscellaneous",
+        "url": "https://souhaiebtar.github.io/dev/",
+        "name": "Souhaieb Tarhouni Blog - Tools",
         "author": {
             "type": "Person",
             "name": "Souhaieb Tarhouni from Jdeida",
