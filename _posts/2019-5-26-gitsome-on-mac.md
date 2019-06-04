@@ -37,4 +37,4 @@ as i concluded that it must be an error on `xonsh`, i googled `xonsh macos mojav
 pip3 install xonsh gnureadline prompt-toolkit
 ```
 
-also for sake of convenience, i run `brew install bash-complete2` after running `brew uninstall bash-complete`
+also for sake of convenience, i run `brew install bash-completion2` after running `brew uninstall bash-completion`
