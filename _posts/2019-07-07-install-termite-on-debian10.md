@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2019-05-20 11:21:09
+date: 2019-07-07 10:14:09
 title: install termite on debian 10
 description: >-
   an article about how i installed termite on debian 10
