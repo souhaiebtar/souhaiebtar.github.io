@@ -24,9 +24,9 @@ i used the `net install` to install it, and i choose the `gnome desktop` and i d
 all things went ok without hassle,
 
 after that i used:
-```SHELL
-su -
-```
+  ```SHELL
+  su -
+  ```
 
 > you are prompted to enter your password than after login succefully
 
