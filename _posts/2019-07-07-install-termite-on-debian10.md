@@ -25,7 +25,6 @@ all things went ok without hassle,
 
 after that i used:
 ```SHELL
-
 su -
 ```
 
