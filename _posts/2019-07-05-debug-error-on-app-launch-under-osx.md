@@ -34,6 +34,7 @@ shortly, how i proceeded:
 
 voila, now i get errors  on the `Console` that can give  me a lead on how to fix the problem
 
+
 ```Debug
 removing service since it exited with consistent failure - OS_REASON_CODESIGNING | When validating /Applications/APPNAME.app/Contents/MacOS/APPNAME
 
@@ -46,7 +47,7 @@ it's a problem with codesignature, it's something that i faced before, normaly c
 sudo codesign --force --deep --sign "/Applications/APPNAME.app/Contents/MacOS/APPNAME"
 ```
 
-> N.B: some time you need to execute the above command on multiple file because the app has devDependencies that are not properly signed, for that repeat the process described above until all error messages go away.
+> N.B: some time you need to execute the above command on multiple file because the app has Dependencies that are not properly signed, for that repeat the process described above until all error messages go away.
 
 Just one thing to now/learn, on MacOS `Console.app` is your friend
 
