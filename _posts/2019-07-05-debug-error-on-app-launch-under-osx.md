@@ -49,7 +49,7 @@ sudo codesign --force --deep --sign "/Applications/APPNAME.app/Contents/MacOS/AP
 
 > N.B: some time you need to execute the above command on multiple file because the app has Dependencies that are not properly signed, for that repeat the process described above until all error messages go away.
 
-Just one thing to now/learn, on MacOS `Console.app` is your friend
+Just one thing to keep in mind, on MacOS `Console.app` is your friend
 
 
 
