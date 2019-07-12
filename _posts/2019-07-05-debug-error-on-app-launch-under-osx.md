@@ -20,7 +20,7 @@ today when i opened my laptop, to start working, one of my preferred productivit
 
 after thinking a little, trying opening the apps from the terminal to see error messages, didn't help at all `open -a` or `/Applications/APPNAME.app/contents/MacOS/APPNAME`, unlike linux opening the app from terminal didn't show any helpful error message.
 
-after some googling, i stumbled open[1][1], which give me a hint, the macOS `Console.app`
+after some googling, i stumbled upon [🔗][1], which give me a hint, the macOS `Console.app`
 
 
 # How to fix it
