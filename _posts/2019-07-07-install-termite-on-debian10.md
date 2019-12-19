@@ -59,8 +59,11 @@ git clone https://github.com/thestinger/vte-ng.git
 echo export LIBRARY_PATH="/usr/include/gtk-3.0:$LIBRARY_PATH"
 cd vte-ng
 git checkout 0.56.2.a
+sh autogen.sh
 sudo make && sudo make install
+cd ~
 git clone --recursive https://github.com/thestinger/termite.git
+cd termite
 sudo make && sudo make install
 sudo ldconfig
 ```
