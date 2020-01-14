@@ -9,7 +9,7 @@ color: '#7AAB13'
 tags:
 - tools
 twitter_text: >-
-  install termite on debian 10
+  compile vim with ruby support and command-t to it
 introduction: "how i compiled vim with ruby support and add command-t to it"
 ---
 # History:
