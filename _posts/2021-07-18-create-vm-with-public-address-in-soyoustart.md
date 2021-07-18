@@ -115,7 +115,7 @@ after i restarted i installed nginx on the vm and i put the vm address in the br
 if you are not living under the rock, you should by now know that centos as we know it is dead (think you IBM), so many distro are know trying to fill the gap
 one of them is Rocky Linux which is based on the code base of RedHat (there is also Alma Linux, which are not that different), so i downloaded the rocky linux 8.4 iso (under /var/lib/libvirt)
 
-i both a failover ip address which will be `178.50.50.64` (sorry it's the real ip address, sorry) that associated with the mac address `02:0z:0z:5z:2z:80` (it's not the real mac address, it's not even a valid one `z` hhh)
+i bought a failover ip address which will be `178.50.50.64` (sorry it's the real ip address, sorry) that associated with the mac address `02:0z:0z:5z:2z:80` (it's not the real mac address, it's not even a valid one `z` hhh)
 
 and i run
 
