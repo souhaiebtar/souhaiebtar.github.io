@@ -13,6 +13,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:title/
 paginate: 21
+future: true
 paginate_path: "/page/:num/"
 
 # plugins
