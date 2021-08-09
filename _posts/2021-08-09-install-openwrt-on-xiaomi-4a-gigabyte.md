@@ -36,6 +36,7 @@ mtd -e OS1 -r write firmware.bin OS1
 
 
 ### Resources
+
 * https://github.com/acecilia/OpenWRTInvasion
 * https://openwrt.org/inbox/toh/xiaomi/xiaomi_mi_router_4a_gigabit_edition
 * https://forum.openwrt.org/t/xiaomi-mi-router-4a-gigabit-edition-r4ag-r4a-gigabit-fully-supported-and-flashable-with-openwrtinvasion/36685/643
