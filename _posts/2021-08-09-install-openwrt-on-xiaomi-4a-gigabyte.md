@@ -27,13 +27,13 @@ for the firmware i downloaded the one from this repo `https://gitlab.com/db26017
 
 >> N.B: the name of the file i used is `openwrt-19.07.7-ramips-mt7621-xiaomi_mir4ag-squashfs-sysupgrade.bin`
 
-you can copy the file using ftp client like `filezilla` or `cyberduck`, copy it to `/tmp` ( because you have write permission) and rename to `firmware.bin` (to make it easier) than just run
+you can copy the file using ftp client like `filezilla` or `cyberduck`, copy it to `/tmp` ( because you have write permission) and rename to `firmware.bin` (to make it easier) than juste run
 
 ```BASH
 mtd -e OS1 -r write firmware.bin OS1
 ```
 
->> N.B: be patient and just wait, go eat something
+>> N.B: be patient and juste wait, go eat something
 
 
 ### Resources
