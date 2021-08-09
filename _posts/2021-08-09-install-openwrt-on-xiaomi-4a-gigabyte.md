@@ -12,7 +12,6 @@ twitter_text: >-
   openwrt Xiaomi 4A Gigabyte
 introduction: "How i installed openwrt Xiaomi 4A Gigabyte"
 ---
-
 ## Introduction
 
 i had my eyes on openWrt for quite some years now but because import is either diffucult or  prone to theft, i had to wait until now to get a Router that support openwrt that is in retail,
