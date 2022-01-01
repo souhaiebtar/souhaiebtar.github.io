@@ -173,5 +173,5 @@ than i run `nmcli con up ens9` and voila internet just work,
 
 thanks goes to
 
-[1]: https://lodge.glasgownet.com/tech/linux-kvm-vms-on-debian-soyoustart-hosts/
-[2]: https://binaryimpulse.com/2014/08/ovh-ip-failover-vm-configuration/
+* https://lodge.glasgownet.com/tech/linux-kvm-vms-on-debian-soyoustart-hosts/
+* https://binaryimpulse.com/2014/08/ovh-ip-failover-vm-configuration/
