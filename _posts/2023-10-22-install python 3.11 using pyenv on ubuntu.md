@@ -50,8 +50,8 @@ then run `exec $0` (or to simply `exec zsh` or `exec bash`, it depend on what yo
 
 ### Resources
 
-https://medium.com/@azuryn/install-python-by-pyenv-w-tcl-tk-on-macos-10-14-6-mojave-14fde5351f53
+[install-python-by-pyenv-w-tcl-tk-on-macos-10-14-6-mojave](https://medium.com/@azuryn/install-python-by-pyenv-w-tcl-tk-on-macos-10-14-6-mojave-14fde5351f53)
 
-https://stackoverflow.com/questions/76878713/tkinter-extension-was-not-compiled-and-gui-subsystem-has-been-detected-missing
+[tkinter-extension-was-not-compiled-and-gui-subsystem-has-been-detected-missing](https://stackoverflow.com/questions/76878713/tkinter-extension-was-not-compiled-and-gui-subsystem-has-been-detected-missing)
 
-https://stackoverflow.com/questions/75096114/problems-with-installing-python-3-11-1-using-pyenv
+[problems-with-installing-python-3-11-1-using-pyenv](https://stackoverflow.com/questions/75096114/problems-with-installing-python-3-11-1-using-pyenv)
