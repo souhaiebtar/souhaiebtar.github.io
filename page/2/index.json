@@ -1,0 +1,44 @@
+
+{
+    
+    
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+            
+                
+            
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+    "articles": [{"date":"2019-05-26","image":"","imageAlt":"","link":"https://souhaiebtar.github.io/install-gitsome-on-macos/","summary":"an article about how i installed gitsome on MacOs","tags":["cli","git","python","tools"],"title":"install gitsome on MacOS"},{"date":"2019-05-20","image":"","imageAlt":"","link":"https://souhaiebtar.github.io/my-favorite-linux-for-development/","summary":"an article about my fovrite linux for development","tags":["arch","linux","manjaro","misc"],"title":"My favorite linux for Development"},{"date":"2019-05-19","image":"/images/one-post-per-day/imagem-principal.png","imageAlt":"","link":"https://souhaiebtar.github.io/#1postperday/","summary":"The idea is to post at least once a day, the more web content the better!","tags":["#1postperday","misc","rss"],"title":"#1postperday!"},{"date":"2017-10-15","image":"","imageAlt":"","link":"https://souhaiebtar.github.io/vm-fusion-vs-parallels-running-opensuse/","summary":"an article about","tags":["linux","misc"],"title":"vm-fusion vs parallels running opensuse"},{"date":"0001-01-01","image":"","imageAlt":"","link":"https://souhaiebtar.github.io/manifest/index.json","summary":"","tags":[],"title":"Manifest"},{"date":"0001-01-01","image":"","imageAlt":"","link":"https://souhaiebtar.github.io/search/","summary":"","tags":[],"title":"Search"}],
+    "test": "About Me   install python 3.11 using pyenv on ubuntu   Update my lenovo Y510P hackintosh to Big sur   install openwrt on xiaomi 4a gigabyte   Create vm with public address in soyoustart   Setup a php composer mysql environment on windows without admin access   how to use pyton  minio library to upload file to s3 as public   Compile vim with ruby support, install command-t to it   Debug error on app launch under osx   install termite on debian 10   install gitsome on MacOS   My favorite linux for Development   #1postperday!   vm-fusion vs parallels running opensuse   Manifest   Search   ",
+    "page": "2",
+    "next": ""
+}
+
