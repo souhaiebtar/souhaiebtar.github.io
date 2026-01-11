@@ -1,0 +1,92 @@
+baseURL = "https://souhaiebtar.github.io"
+theme = "ficurinia"
+title = "Souhaieb Tarhouni - a developer"
+languageCode = "en"
+defaultContentLanguage = "en"
+
+# Preserve Jekyll URL structure
+[permalinks]
+  posts = "/:title/"
+
+# Match Jekyll pagination (21 posts/page)
+[pagination]
+  pagerSize = 21
+
+# Site parameters (minimal + color-matched)
+[params]
+    author = "Souhaieb Tarhouni from Jdeida"
+    description = "a blog about the stuff i work and i play with"
+    
+    # Content
+    posts = "posts"
+    showPostsLink = true
+    
+    # ENABLED: Search (PRIORITY)
+    enableSearch = true
+    searchbarEverywhere = true
+    searchMenuLink = false
+    
+    # ENABLED: Tags (PRIORITY)
+    showTags = true
+    tagsInArticlePreview = true
+    
+    # Display options
+    articleSummary = true
+    imageInArticlePreview = true
+    
+    # Icons
+    favicon = "/favicon.ico"
+    
+    # DISABLED: Comments
+    # commento = "..."
+    # cactusCommentsSiteName = "..."
+    
+    # DISABLED: Analytics
+    # plausibleScriptUrl = "..."
+    # plausibleDomain = "..."
+    # umamiScriptUrl = "..."
+    # umamiWebsiteId = "..."
+
+# Menu (minimal - no cursos)
+[menu]
+    [[menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about/"
+        weight = 20
+    
+    # Tags link auto-generated when showTags = true
+    # Posts link auto-generated from content/posts
+
+# Icon links
+[[menu.icons]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/souhaiebtar"
+    weight = 10
+
+[[menu.icons]]
+    identifier = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/tsouhaieb"
+    weight = 20
+
+# REQUIRED for search to work
+[outputs]
+    home = ["HTML", "JSON"]
+    page = ["HTML"]
+    section = ["HTML"]
+    taxonomy = ["HTML"]
+    term = ["HTML"]
+
+# Taxonomies (tags only, no RSS)
+[taxonomies]
+    tag = "tags"
+
+# Markdown configuration
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow HTML in markdown
+  [markup.highlight]
+    style = "github"

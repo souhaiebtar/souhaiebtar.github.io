@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="" lang="en"><head>
+    
+    <meta name="robots" content="noai, noimageai">
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link
+    rel="icon"
+    href='/favicon.ico'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+            install python 3.11 using pyenv on ubuntu  &ndash;
+        
+        Souhaieb Tarhouni - a developer
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" />
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" />
+
+    
+    
+    
+    <style>
+        :root {
+            --default_bg: #ffffff;
+            --default_fg: #333333;
+            --default_accent: #005F97;
+            --default_hl_bg: #F2F2F2;
+            --default_dim_fg: #666666;
+            --default_stroke: #F2F2F2;
+            --default_sidebar_bg: #F2F2F2;
+            --default_sidebar_fg: #333333;
+        }
+        
+        body {
+            background: var(--default_bg);
+            color: var(--default_fg);
+            font-family: 'JetBrains Mono', monospace;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {
+            color: var(--default_accent);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+         
+    </style>
+<meta name="author" content="Souhaieb Tarhouni from Jdeida" />
+
+    
+        <meta name="keywords" content='tools' />
+    
+    
+        <meta name="description" content="an article for testing" />
+    
+
+<meta property="og:site_name"
+    content='Souhaieb Tarhouni - a developer' />
+
+    <meta property="og:title" content="install python 3.11 using pyenv on ubuntu" />
+    <meta property="og:type" content="article" />
+    
+    <meta
+        property="article:author" content="Souhaieb Tarhouni from Jdeida" />
+    
+    <meta
+        property="article:published_time"
+        content='2023-10-22T11:48:09Z&#43;0000' />
+    
+        
+            <meta property="article:tag" content="tools" />
+        
+    
+    <meta property="og:url" content="https://souhaiebtar.github.io/install-python-3.11-using-pyenv-on-ubuntu/" />
+    
+    
+    <meta property="og:image"
+        content="https://souhaiebtar.github.io/img/icon.svg" />
+    
+        <meta property="og:description" content="an article for testing" />
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='ouhaiebtar.github.io'
+/>
+<meta property="twitter:url" content="https://souhaiebtar.github.io/install-python-3.11-using-pyenv-on-ubuntu/" />
+
+
+    <meta name="twitter:title" content="install python 3.11 using pyenv on ubuntu" />
+    
+    
+    
+    <meta name="twitter:image"
+        content="https://souhaiebtar.github.io/img/icon.svg" />
+    
+        <meta name="twitter:description" content="an article for testing" />
+    
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+<body>
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Souhaieb Tarhouni - a developer</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts/">Posts</a></li>
+        
+        
+        
+        
+        
+        
+            <li><a href="/about/">About</a></li>
+        
+        
+            <li><a href="/tags/">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Search' />
+    <span class="nerdlink" onclick="newSearch();">&#xf002;</span>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search/?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/souhaiebtar">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+<a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://twitter.com/tsouhaieb">
+    
+    
+        &#xf099;
+    
+    <span>
+        Twitter
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+<article class="card single">
+    
+        <h1>install python 3.11 using pyenv on ubuntu</h1>
+    
+    
+        <p class="date">
+            <span title='Date'>󰃭 </span>
+    2023-10-22
+
+
+        </p>
+    
+    
+    
+    
+    <div><h2 id="introduction">Introduction</h2>
+<p>as usual i use pyenv to install whatever python version i want, yesterday when i tried to install python 3.11 using <code>pyenv install 3.11</code>,
+the command caused a lot of error, it seem to be related to <code>tcl-tk</code> and one of error log showed <code>ModuleNotFoundError: No module named '_tkinter'</code></p>
+<p>after some googling, there was 3 main articles (the one below in resources),
+the main article that i used is the one in <code>medium.com</code>, with some adpatation for <code>Ubuntu</code> i&rsquo;m using</p>
+<h2 id="how-to-proceed">How to proceed</h2>
+<p>basically</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-BASH" data-lang="BASH"><span style="display:flex;"><span>brew install pyenv
+</span></span><span style="display:flex;"><span>brew install tcl-tk
+</span></span><span style="display:flex;"><span>brew install pyenv-virtualenv
+</span></span></code></pre></div><p>then after that you add to <code>.zshrc</code> or <code>.bashrc</code> (it depend on what you are using)</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-BASH" data-lang="BASH"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> which pyenv &gt; /dev/null; <span style="color:#000;font-weight:bold">then</span> <span style="color:#0086b3">eval</span> <span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">$(</span>pyenv init -<span style="color:#000;font-weight:bold">)</span><span style="color:#d14">&#34;</span>; <span style="color:#000;font-weight:bold">fi</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">if</span> which pyenv-virtualenv-init &gt; /dev/null; <span style="color:#000;font-weight:bold">then</span> <span style="color:#0086b3">eval</span> <span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">$(</span>pyenv virtualenv-init -<span style="color:#000;font-weight:bold">)</span><span style="color:#d14">&#34;</span>; <span style="color:#000;font-weight:bold">fi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">export</span> <span style="color:#008080">LDFLAGS</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;-L</span><span style="color:#000;font-weight:bold">$(</span>brew --prefix tcl-tk<span style="color:#000;font-weight:bold">)</span><span style="color:#d14">:</span><span style="color:#008080">$LDFLAGS</span><span style="color:#d14">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">export</span> <span style="color:#008080">CPPFLAGS</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;-L</span><span style="color:#000;font-weight:bold">$(</span>brew --prefix tcl-tk<span style="color:#000;font-weight:bold">)</span><span style="color:#d14">/include:</span><span style="color:#008080">$CPPFLAGS</span><span style="color:#d14">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">export</span> <span style="color:#008080">PKG_CONFIG_PATH</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;-L</span><span style="color:#000;font-weight:bold">$(</span>brew --prefix tcl-tk<span style="color:#000;font-weight:bold">)</span><span style="color:#d14">/lib/pkgconfig:</span><span style="color:#008080">$PKG_CONFIG_PATH</span><span style="color:#d14">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">export</span> <span style="color:#008080">PYTHON_CONFIGURE_OPTS</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;--with-tcltk-includes=&#39;-I</span><span style="color:#000;font-weight:bold">$(</span>brew --prefix tcl-tk<span style="color:#000;font-weight:bold">)</span><span style="color:#d14">/include&#39; --with-tcltk-libs=&#39;-L</span><span style="color:#000;font-weight:bold">$(</span>brew --prefix tcl-tk<span style="color:#000;font-weight:bold">)</span><span style="color:#d14">/lib -ltcl8.6 -ltk8.6&#39;:</span><span style="color:#008080">$PYTHON_CONFIGURE_OPTS</span><span style="color:#d14">&#34;</span>
+</span></span></code></pre></div><p>then run <code>exec $0</code> (or to simply <code>exec zsh</code> or <code>exec bash</code>, it depend on what you are using)</p>
+<h3 id="resources">Resources</h3>
+<p><a href="https://medium.com/@azuryn/install-python-by-pyenv-w-tcl-tk-on-macos-10-14-6-mojave-14fde5351f53">install-python-by-pyenv-w-tcl-tk-on-macos-10-14-6-mojave</a></p>
+<p><a href="https://stackoverflow.com/questions/76878713/tkinter-extension-was-not-compiled-and-gui-subsystem-has-been-detected-missing">tkinter-extension-was-not-compiled-and-gui-subsystem-has-been-detected-missing</a></p>
+<p><a href="https://stackoverflow.com/questions/75096114/problems-with-installing-python-3-11-1-using-pyenv">problems-with-installing-python-3-11-1-using-pyenv</a></p>
+</div>
+</article>
+
+    <hr />
+    <p class="articleTagsContainer">
+        <span> </span>
+        <strong>Tags:</strong>
+        
+            <a
+                
+                href="/tags/tools/">#tools</a>
+        
+    </p>
+
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2026 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html class="" lang="en"><head>
+    
+    <meta name="robots" content="noai, noimageai">
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+    <link
+    rel="icon"
+    href='/favicon.ico'
+/>
+<link
+    rel="shortcut icon"
+    href='/favicon.ico'
+    type="image/x-icon"
+/>
+<link
+    rel="apple-touch-icon"
+    href='/apple-touch-icon.png'
+/>
+
+<title>
+        
+            Compile vim with ruby support, install command-t to it  &ndash;
+        
+        Souhaieb Tarhouni - a developer
+    </title>
+
+    
+    <link href="/symbols-nerd-font/symbols-nerd-font.css" rel="stylesheet" />
+    <link href="/jetbrains-mono/jetbrains-mono.css" rel="stylesheet" />
+
+    
+    
+    
+    <style>
+        :root {
+            --default_bg: #ffffff;
+            --default_fg: #333333;
+            --default_accent: #005F97;
+            --default_hl_bg: #F2F2F2;
+            --default_dim_fg: #666666;
+            --default_stroke: #F2F2F2;
+            --default_sidebar_bg: #F2F2F2;
+            --default_sidebar_fg: #333333;
+        }
+        
+        body {
+            background: var(--default_bg);
+            color: var(--default_fg);
+            font-family: 'JetBrains Mono', monospace;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {
+            color: var(--default_accent);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+         
+    </style>
+<meta name="author" content="Souhaieb Tarhouni from Jdeida" />
+
+    
+        <meta name="keywords" content='tools, tools' />
+    
+    
+        <meta name="description" content="an article about how i compiled vim with ruby support and adding command-t to it" />
+    
+
+<meta property="og:site_name"
+    content='Souhaieb Tarhouni - a developer' />
+
+    <meta property="og:title" content="Compile vim with ruby support, install command-t to it" />
+    <meta property="og:type" content="article" />
+    
+    <meta
+        property="article:author" content="Souhaieb Tarhouni from Jdeida" />
+    
+    <meta
+        property="article:published_time"
+        content='2020-01-14T20:19:09Z&#43;0000' />
+    
+        
+            <meta property="article:tag" content="tools" />
+        
+            <meta property="article:tag" content="tools" />
+        
+    
+    <meta property="og:url" content="https://souhaiebtar.github.io/compile-vim-with-ruby-support-install-command-t-to-it/" />
+    
+    
+    <meta property="og:image"
+        content="https://souhaiebtar.github.io/img/icon.svg" />
+    
+        <meta property="og:description" content="an article about how i compiled vim with ruby support and adding command-t to it" />
+    
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain"
+      content='ouhaiebtar.github.io'
+/>
+<meta property="twitter:url" content="https://souhaiebtar.github.io/compile-vim-with-ruby-support-install-command-t-to-it/" />
+
+
+    <meta name="twitter:title" content="Compile vim with ruby support, install command-t to it" />
+    
+    
+    
+    <meta name="twitter:image"
+        content="https://souhaiebtar.github.io/img/icon.svg" />
+    
+        <meta name="twitter:description" content="an article about how i compiled vim with ruby support and adding command-t to it" />
+    
+
+<link rel="manifest" href="/manifest/index.json" />
+</head>
+
+<body>
+        <div id="baseContainer"><header class="">
+<div class="titleAndSearchContainer">
+        <div id="titleContainer">
+            
+                <a class="unstyledLink" href="/">
+                    <img src='/logo.svg' alt='Logo'/>
+                </a>
+            
+            <div class="rightOfLogo">
+                <div class="titleAndHamburger">
+                    <h1>
+                        <a class="unstyledLink" href="/">Souhaieb Tarhouni - a developer</a>
+                        
+                    </h1>
+                    
+                </div>
+                <div id="wide_nav"><nav>
+    
+    <ul id="main-nav">
+        <li><a href="/">Home</a></li>
+        
+            <li><a href="/posts/">Posts</a></li>
+        
+        
+        
+        
+        
+        
+            <li><a href="/about/">About</a></li>
+        
+        
+            <li><a href="/tags/">Tags</a></li>
+        
+        
+    </ul>
+</nav>
+</div>
+            </div>
+        </div>
+        <div class="search">
+    <input id="searchbar" type="text" placeholder='Search' />
+    <span class="nerdlink" onclick="newSearch();">&#xf002;</span>
+</div>
+<script>
+    function newSearch() {
+        let term = searchbar.value.trim();
+        if (!term) return;
+        location.href = `/search/?q=${term}`;
+    }
+    searchbar.onkeyup = (ev) => {if (ev.keyCode == 13) newSearch()};
+</script>
+
+    </div>
+    <div id="links">
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="/index.xml">
+    
+    
+        &#xf09e;
+    
+    <span>
+        RSS
+    </span>
+</a>
+
+        
+        <a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://github.com/souhaiebtar">
+    
+    
+        &#xf09b;
+    
+    <span>
+        GitHub
+    </span>
+</a>
+<a
+    
+        rel="noreferrer"
+    
+    target="_blank"
+    class="nerdlink"
+    href="https://twitter.com/tsouhaieb">
+    
+    
+        &#xf099;
+    
+    <span>
+        Twitter
+    </span>
+</a>
+
+    </div>
+    
+
+</header>
+<div id="contentContainer">
+                <div id="content">
+                    <main>
+<article class="card single">
+    
+        <h1>Compile vim with ruby support, install command-t to it</h1>
+    
+    
+        <p class="date">
+            <span title='Date'>󰃭 </span>
+    2020-01-14
+
+
+        </p>
+    
+    
+    
+    
+    <div><h1 id="history">History:</h1>
+<p>i like to test, tweak and customize thing to feet my need, one of this thing is vim, i can&rsquo;t even describe how much this editor is great and how much it&rsquo;s helpful, simply it&rsquo;s stupid not use it (or at least something similar, <strong>emacs</strong> maybe)</p>
+<h1 id="vim-installation">VIM installation</h1>
+<p>vim is a great tool but it&rsquo;s tricky to make it work when you like to tweak and test new thing plugin included, specially when some plugin either require ruby or python, in my case i installed it with ruby support enabled</p>
+<ol>
+<li>first check if you have many a ruby version manager (n my case rbenv), make sure to use ruby version set by the system, in my case i used</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>rbenv global system
+</span></span></code></pre></div><ol start="2">
+<li>clone the vim repo</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/vim/vim
+</span></span></code></pre></div><ol start="3">
+<li>change directory, branch and clean things ( the version can be changed to your liking)</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#0086b3">cd</span> vim <span style="color:#000;font-weight:bold">&amp;&amp;</span> git checkout v8.1.0021 <span style="color:#000;font-weight:bold">&amp;&amp;</span> git clean -f
+</span></span></code></pre></div><ol start="4">
+<li>Configure vim build</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>./configure --prefix<span style="color:#000;font-weight:bold">=</span>/usr/local <span style="color:#d14">\
+</span></span></span><span style="display:flex;"><span><span style="color:#d14"></span>--with-x <span style="color:#d14">\
+</span></span></span><span style="display:flex;"><span><span style="color:#d14"></span>  --disable-nls <span style="color:#d14">\
+</span></span></span><span style="display:flex;"><span><span style="color:#d14"></span>  --disable-netbeans <span style="color:#d14">\
+</span></span></span><span style="display:flex;"><span><span style="color:#d14"></span>  --disable-gui <span style="color:#d14">\
+</span></span></span><span style="display:flex;"><span><span style="color:#d14"></span>  --enable-multibyte <span style="color:#d14">\
+</span></span></span><span style="display:flex;"><span><span style="color:#d14"></span>  --enable-rubyinterp <span style="color:#d14">\
+</span></span></span><span style="display:flex;"><span><span style="color:#d14"></span>  --enable-python3interp <span style="color:#d14">\
+</span></span></span><span style="display:flex;"><span><span style="color:#d14"></span>  --with-features<span style="color:#000;font-weight:bold">=</span>huge <span style="color:#d14">\
+</span></span></span><span style="display:flex;"><span><span style="color:#d14"></span>  --with-tlib<span style="color:#000;font-weight:bold">=</span>ncurses <span style="color:#d14">\
+</span></span></span><span style="display:flex;"><span><span style="color:#d14"></span> --enable-fail-if-missing <span style="color:#d14">\
+</span></span></span></code></pre></div><ol start="5">
+<li>build vim</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo make <span style="color:#000;font-weight:bold">&amp;&amp;</span> sudo make install <span style="color:#000;font-weight:bold">&amp;&amp;</span> sudo make clean
+</span></span></code></pre></div><p>now you should have vim installed</p>
+<h1 id="install-command-t">Install command-t</h1>
+<ol>
+<li>install command-t plugin using your favorite plugin manager (in my case <em>Plugged</em>), i added</li>
+</ol>
+<pre tabindex="0"><code>Plug &#39;wincent/command-t&#39;
+</code></pre><ol start="2">
+<li>change directory to <code>extconf.rb</code>, for Plugged</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>~/.vim/plugged/command-t/ruby/command-t/ext/command-t
+</span></span></code></pre></div><ol start="3">
+<li>build command-t</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ruby extconf.rb <span style="color:#000;font-weight:bold">&amp;&amp;</span> make clean <span style="color:#000;font-weight:bold">&amp;&amp;</span> make
+</span></span></code></pre></div><p>Now, you should be able to run vim and use command-t plugin without problem,</p>
+<p><strong>N.B:</strong>
+to use command to
+use
+<code> &lt;leader&gt; t</code> (in vim, by default <leader> is the <code>\</code> character)</p>
+</div>
+</article>
+
+    <hr />
+    <p class="articleTagsContainer">
+        <span> </span>
+        <strong>Tags:</strong>
+        
+            <a
+                
+                href="/tags/tools/">#tools</a>
+        
+            <a
+                
+                href="/tags/tools/">#tools</a>
+        
+    </p>
+
+
+
+
+
+
+                    </main><footer>
+    <hr />
+
+<p><small>
+        2026 &copy; 
+    </small></p>
+    <p><small>
+        <a href='https://gitlab.com/gabmus/hugo-ficurinia'>Ficurinia theme</a> for <a href='https://gohugo.io'>Hugo</a> by <a href='https://gabmus.org'>Gabriele Musco</a>. Licensed under <a href='https://www.gnu.org/licenses/agpl-3.0.html'>GNU AGPLv3</a>.
+    </small></p>
+</footer>
+</div>
+            </div>
+        </div>
+
+
+</body>
+</html>

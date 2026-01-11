@@ -1,0 +1,24 @@
+# Match original Jekyll colors for Ficurinia theme
+default: "light"
+
+light:
+  bg: "#ffffff"
+  fg: "#333333"
+  accent: "#005F97"      # Original main blue
+  hl_bg: "#F2F2F2"      # Original light gray
+  dim_fg: "#666666"
+  stroke: "#F2F2F2"
+  sidebar:
+    bg: "#F2F2F2"
+    fg: "#333333"
+
+dark:
+  bg: "#333333"
+  fg: "#ffffff"
+  accent: "#005F97"
+  hl_bg: "#444444"
+  dim_fg: "#cccccc"
+  stroke: "#666666"
+  sidebar:
+    bg: "#444444"
+    fg: "#ffffff"

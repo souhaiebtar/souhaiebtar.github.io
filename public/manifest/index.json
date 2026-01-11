@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "Souhaieb Tarhouni - a developer",
+  "short_name": "Souhaieb Tarhouni - a developer",
+  "start_url": "/",
+  "display": "standalone",
+  
+  
+  
+    
+    
+  
+  "background_color": "#ffffff",
+  "theme_color": "#005F97"
+  
+    ,
+    "description": "a blog about the stuff i work and i play with"
+  
+  
+}
+
